@@ -18,13 +18,13 @@ jobs:
       MONGODB_CLUSTER_ADDRESS: mongodb
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example
+      PORT: 8080
     services:
       mongodb:
-        image: mongodb:5.0
+        image: mongo
         env:
           MONGO_INITDB_ROOT_USERNAME: root
           MONGO_INITDB_ROOT_PASSWORD: example
-      PORT: 8080
     steps:
       - name: Get Code
         uses: actions/checkout@v3
