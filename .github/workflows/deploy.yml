@@ -20,7 +20,7 @@ jobs:
       MONGODB_PASSWORD: example
     services:
       mongodb:
-        image: mongo
+        image: mongodb:5.0
         env:
           MONGO_INITDB_ROOT_USERNAME: root
           MONGO_INITDB_ROOT_PASSWORD: example
